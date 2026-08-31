@@ -1,0 +1,43 @@
+# Dépendances
+node_modules/
+
+# Build / sortie du projet
+dist/
+build/
+out/
+.cache/
+.vite/
+.parcel-cache/
+
+# Fichiers d'environnement
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Système
+.DS_Store
+Thumbs.db
+
+# Éditeur / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.bak
+
+# Couverture / tests
+coverage/
+
+# Assets lourds ou générés localement (ajuster selon votre projet)
+*.map
