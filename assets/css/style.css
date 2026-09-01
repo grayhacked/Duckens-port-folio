@@ -181,7 +181,8 @@ p {
 }
 
 .project-grid,
-.contact-grid {
+.contact-grid,
+.doc-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 18px;
@@ -189,10 +190,38 @@ p {
 
 .project-card h3,
 .contact-card h3,
-.timeline-item h3 {
+.timeline-item h3,
+.doc-card h3 {
     margin-top: 0;
     margin-bottom: 8px;
     color: var(--primary-strong);
+}
+
+.doc-card {
+    border: 1px solid var(--border);
+    background: linear-gradient(135deg, #f4f9ff 0%, #ffffff 100%);
+    border-radius: 16px;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.doc-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    text-decoration: none;
+    background: var(--primary);
+    color: white;
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.doc-link:hover {
+    background: var(--primary-strong);
 }
 
 .label {

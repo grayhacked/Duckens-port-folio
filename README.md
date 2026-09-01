@@ -1,24 +1,27 @@
 # Portfolio de Jean-Duckens Sannon
 
-Portfolio personnel de **Jean-Duckens Sannon**, Informaticien avec une spécialité en IA.
+Portfolio personnel de **Jean-Duckens Sannon**, Data Analyste / Data Scientist.
 
-Le site présente mon profil, mon parcours, mes compétences techniques, mes
-expériences professionnelles et mes projets data/IA.
+Ce site met en avant mon profil, mon parcours académique, mes compétences techniques, mes expériences professionnelles, mes projets data/IA, ainsi que mes formations et certifications.
 
 ## Aperçu
 
-- Modélisation prédictive et analyse de données
-- Déploiement de modèles avec FastAPI, Docker et MLflow
-- Projets de classification multimodale et de prédiction de trajets
-- Expérience Data Scientist chez Cdiscount
-- CV consultable directement depuis le site
+- Analyse de données et reporting business
+- Dashboard Power BI et modélisation DAX
+- Automatisation de workflows et optimisation de processus
+- Modélisation prédictive et Machine Learning
+- Expérience en environnement e-commerce et Système/Réseau
+- CV directement consultable depuis le site
 
 ## Technologies
 
 - HTML5
 - CSS3
 - JavaScript
-- Python et SQL (présentés dans les projets)
+- Power BI
+- SQL
+- Python
+- Git / GitHub
 
 ## Structure du projet
 
@@ -35,41 +38,58 @@ expériences professionnelles et mes projets data/IA.
 │   ├── css/style.css
 │   ├── js/script.js
 │   └── images/
-└── documents/
-    └── Jean_Sannon_Data_Scientist_CV.pdf
+├── documents/
+│   └── cv.pdf
+├── README.md
+└── .gitignore
 ```
 
 ## Lancer le portfolio en local
 
-Le portfolio est un site statique. Il ne nécessite aucune installation
-particulière.
+Le portfolio est un site statique, donc il fonctionne sans installation de dépendances.
 
-1. Clonez le dépôt :
-
-   ```bash
-   git clone <url-de-votre-depot>
-   ```
-
-2. Ouvrez le fichier `index.html` dans un navigateur.
-
-Pour un meilleur confort de développement, vous pouvez aussi utiliser
-l'extension **Live Server** de Visual Studio Code.
+1. Ouvrez le dossier du projet.
+2. Double-cliquez sur `index.html` ou utilisez un serveur local comme Live Server dans VS Code.
 
 ## Navigation
 
 - `index.html` : accueil et présentation
-- `pages/parcours.html` : formations et certifications
-- `pages/competences.html` : compétences techniques
+- `pages/parcours.html` : parcours, formation, certifications et attestations
+- `pages/competences.html` : compétences techniques et métiers
 - `pages/experiences.html` : expériences professionnelles
 - `pages/projets.html` : projets data et IA
-- `pages/contacts.html` : coordonnées et liens professionnels
+- `pages/contacts.html` : coordonnées et CV
+
+## Préparer le dépôt GitHub
+
+### 1) Initialiser le dépôt (si ce n’est pas déjà fait)
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+```
+
+### 2) Créer un dépôt sur GitHub
+
+- Créez un nouveau repository sur GitHub.
+- Copiez son URL publique, par exemple :
+
+```bash
+https://github.com/<votre-username>/<nom-du-repo>.git
+```
+
+### 3) Relier le projet au dépôt distant
+
+```bash
+git remote add origin https://github.com/<votre-username>/<nom-du-repo>.git
+git branch -M main
+git push -u origin main
+```
 
 ## Personnalisation
 
-Les informations principales sont réparties dans les pages HTML. Le style se
-trouve dans `assets/css/style.css`, les interactions dans
-`assets/js/script.js`, les images dans `assets/images/` et le CV dans
-`documents/`.
+Les contenus sont répartis dans les pages HTML. Le style est dans `assets/css/style.css`, les interactions dans `assets/js/script.js`, les images dans `assets/images/`, et le CV dans `documents/cv.pdf`.
 
 ## Contact
 
@@ -79,5 +99,4 @@ trouve dans `assets/css/style.css`, les interactions dans
 
 ## Licence
 
-Ce portfolio est un projet personnel. Le contenu, les informations
-professionnelles et le CV ne peuvent pas être réutilisés sans autorisation.
+Ce portfolio est un projet personnel. Le contenu, les informations professionnelles et le CV ne peuvent pas être réutilisés sans autorisation.
