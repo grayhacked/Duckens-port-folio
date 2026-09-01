@@ -1,4 +1,4 @@
-/* Base du portfolio */
+﻿/* Base du portfolio */
 :root {
     --bg: #f4f7fb;
     --bg-panel: #ffffff;
@@ -336,5 +336,43 @@ small {
     .hero-visual,
     .page-card {
         padding: 24px 20px;
+    }
+}
+
+
+/* Animation fade-in au chargement */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Underline animé sur les titres */
+h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 2px;
+    margin-top: 12px;
+    animation: expandWidth 0.8s ease-out;
+}
+
+@keyframes expandWidth {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80px;
     }
 }
