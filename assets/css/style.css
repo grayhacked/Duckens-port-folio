@@ -188,6 +188,7 @@ p {
     background: #f8fbff;
     border-radius: 16px;
     padding: 18px 20px;
+    min-width: 0;
 }
 
 .project-grid,
@@ -268,15 +269,23 @@ ul li {
 .contact-list {
     list-style: none;
     display: grid;
-    gap: 12px;
+    gap: 15px;
     padding: 0;
     margin: 0;
 }
 
 .contact-list a {
+    display: block;
     color: var(--primary-strong);
     text-decoration: none;
     font-weight: 600;
+    overflow-wrap: anywhere; 
+    word-break: break-word;
+}
+
+.contact-list a:hover,
+.contact-list a:focus-visible {
+    text-decoration: underline;
 }
 
 /* Bouton d'action */
