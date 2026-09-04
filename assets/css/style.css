@@ -148,6 +148,14 @@ p {
     padding: 26px 28px;
 }
 
+.recruiter-cta {
+    text-align: center;
+}
+
+.recruiter-cta .hero-link {
+    margin: 4px 6px;
+}
+
 .skills-panel h3 {
     margin-top: 0;
     color: var(--primary-strong);
@@ -233,6 +241,12 @@ p {
 
 .doc-link:hover {
     background: var(--primary-strong);
+}
+
+.document-pending {
+    margin: auto 0 0;
+    color: var(--muted);
+    font-style: italic;
 }
 
 .label {
@@ -355,6 +369,11 @@ small {
     .hero-visual,
     .page-card {
         padding: 24px 20px;
+    }
+
+    .recruiter-cta .hero-link {
+        display: block;
+        margin: 8px 0;
     }
 }
 
