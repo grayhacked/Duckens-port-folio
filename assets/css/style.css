@@ -34,6 +34,13 @@ main {
 }
 
 /* Navigation */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--nav);
+}
+
 nav {
     display: flex;
     gap: 18px;
@@ -174,6 +181,7 @@ p {
     border-radius: 22px;
     box-shadow: var(--shadow);
     padding: 28px;
+    margin-top: 20px;
 }
 
 .page-card h1 {
@@ -336,6 +344,11 @@ footer {
     margin-bottom: 14px;
 }
 
+.site-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
 .social-links a {
     display: inline-flex;
     align-items: center;
