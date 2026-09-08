@@ -40,6 +40,11 @@ Ce site met en avant mon profil, mon parcours académique, mes compétences tech
 │   └── images/
 ├── documents/
 │   └── cv.pdf
+├── projects/
+│   ├── data-analytics/
+│   ├── data-science/
+│   ├── networking/
+│   └── README.md
 ├── README.md
 └── .gitignore
 ```
