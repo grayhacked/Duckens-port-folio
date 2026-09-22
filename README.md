@@ -1,6 +1,6 @@
 # Portfolio de Jean-Duckens Sannon
 
-Portfolio personnel de **Jean-Duckens Sannon**, Data Analyste / Data Scientist.
+Portfolio personnel de **Jean-Duckens Sannon**, Data Scientist spécialisé en Machine Learning et MLOps, avec une expérience en Data Analysis, Business Intelligence et systèmes/réseaux.
 
 Ce site met en avant mon profil, mon parcours académique, mes compétences techniques, mes expériences professionnelles, mes projets data/IA, ainsi que mes formations et certifications.
 
@@ -10,6 +10,8 @@ Ce site met en avant mon profil, mon parcours académique, mes compétences tech
 - Dashboard Power BI et modélisation DAX
 - Automatisation de workflows et optimisation de processus
 - Modélisation prédictive et Machine Learning
+- APIs REST avec FastAPI, Docker et CI/CD
+- RAG et prototypes d'IA générative
 - Expérience en environnement e-commerce et Système/Réseau
 - CV directement consultable depuis le site
 
@@ -21,6 +23,8 @@ Ce site met en avant mon profil, mon parcours académique, mes compétences tech
 - Power BI
 - SQL
 - Python
+- FastAPI, Docker et GitHub Actions
+- LightGBM, scikit-learn et RAG
 - Git / GitHub
 
 ## Structure du projet
@@ -39,7 +43,8 @@ Ce site met en avant mon profil, mon parcours académique, mes compétences tech
 │   ├── js/script.js
 │   └── images/
 ├── documents/
-│   └── cv.pdf
+│   ├── cv.pdf
+│   └── CV_Jean_Duckens_Sannon.docx
 ├── projects/
 │   ├── data-analytics/
 │   ├── data-science/
