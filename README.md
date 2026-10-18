@@ -1,6 +1,6 @@
-# Portfolio de Jean-Duckens Sannon
+# Portfolio de Jean Duckens Sannon
 
-Portfolio personnel de **Jean-Duckens Sannon**, Data Scientist spécialisé en Machine Learning et MLOps, avec une expérience en Data Analysis, Business Intelligence et systèmes/réseaux.
+Portfolio personnel de **Jean Duckens Sannon**, Data Scientist junior (Machine Learning et MLOps), avec une expérience en Data Analysis, Business Intelligence et systèmes/réseaux.
 
 Ce site met en avant mon profil, mon parcours académique, mes compétences techniques, mes expériences professionnelles, mes projets data/IA, ainsi que mes formations et certifications.
 
@@ -19,7 +19,6 @@ Ce site met en avant mon profil, mon parcours académique, mes compétences tech
 
 - HTML5
 - CSS3
-- JavaScript
 - Power BI
 - SQL
 - Python
@@ -40,7 +39,6 @@ Ce site met en avant mon profil, mon parcours académique, mes compétences tech
 │   └── contacts.html
 ├── assets/
 │   ├── css/style.css
-│   ├── js/script.js
 │   └── images/
 ├── documents/
 │   ├── cv.pdf
@@ -70,41 +68,14 @@ Le portfolio est un site statique, donc il fonctionne sans installation de dépe
 - `pages/projets.html` : projets data et IA
 - `pages/contacts.html` : coordonnées et CV
 
-## Préparer le dépôt GitHub
-
-### 1) Initialiser le dépôt (si ce n’est pas déjà fait)
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-```
-
-### 2) Créer un dépôt sur GitHub
-
-- Créez un nouveau repository sur GitHub.
-- Copiez son URL publique, par exemple :
-
-```bash
-https://github.com/<votre-username>/<nom-du-repo>.git
-```
-
-### 3) Relier le projet au dépôt distant
-
-```bash
-git remote add origin https://github.com/<votre-username>/<nom-du-repo>.git
-git branch -M main
-git push -u origin main
-```
-
 ## Personnalisation
 
-Les contenus sont répartis dans les pages HTML. Le style est dans `assets/css/style.css`, les interactions dans `assets/js/script.js`, les images dans `assets/images/`, et le CV dans `documents/cv.pdf`.
+Les contenus sont répartis dans les pages HTML. Le style est dans `assets/css/style.css`, les images dans `assets/images/`, et le CV dans `documents/cv.pdf`.
 
 ## Contact
 
-- Email : jeanduckens.sannon@etu.estia.fr
-- LinkedIn : [Jean-Duckens Sannon](https://www.linkedin.com/in/jean-duckens-sannon)
+- Email : sannonjeanduckens@gmail.com
+- LinkedIn : [Jean Duckens Sannon](https://www.linkedin.com/in/jean-duckens-sannon)
 - GitHub : [grayhacked](https://github.com/grayhacked)
 
 ## Licence

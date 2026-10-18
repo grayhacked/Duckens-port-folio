@@ -163,7 +163,7 @@ p {
     margin: 4px 6px;
 }
 
-.skills-panel h3 {
+.skills-panel h2 {
     margin-top: 0;
     color: var(--primary-strong);
     font-size: 1.4rem;
@@ -358,22 +358,10 @@ ul li {
     text-decoration: underline;
 }
 
-/* Bouton d'action */
-#monBouton {
-    margin-top: 20px;
-    border: none;
-    background: linear-gradient(135deg, var(--accent), var(--primary));
-    color: white;
-    font-weight: 700;
-    padding: 12px 22px;
-    border-radius: 999px;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 12px 25px rgba(71, 167, 255, 0.28);
-}
-
-#monBouton:hover {
-    transform: translateY(-1px);
+/* Focus clavier */
+a:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
 }
 
 /* Pied de page */
@@ -473,5 +461,15 @@ h1::after {
     }
     to {
         width: 80px;
+    }
+}
+
+/* Respect des préférences de mouvement réduit */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
     }
 }
