@@ -224,6 +224,20 @@ p {
     color: var(--primary-strong);
 }
 
+.timeline-item ul {
+    list-style: disc;
+    display: block;
+    padding-left: 20px;
+}
+
+.timeline-item ul li {
+    background: none;
+    border: 0;
+    padding: 0;
+    margin-bottom: 6px;
+    font-weight: 400;
+}
+
 .project-card-featured {
     background: linear-gradient(135deg, #eef7ff 0%, #ffffff 100%);
 }

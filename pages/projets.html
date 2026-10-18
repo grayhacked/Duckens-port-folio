@@ -31,54 +31,67 @@
                 <h2>Data Science & Machine Learning</h2>
                 <div class="project-grid">
                     <article class="project-card project-card-featured">
-                        <span class="label">LightGBM · FastAPI · Docker · CI/CD</span>
-                        <h3>Prédiction météo de bout en bout</h3>
-                        <p>Système prédisant température et humidité à partir de données historiques, avec collecte, prétraitement, entraînement et versionnement de modèles.</p>
+                        <span class="label">LightGBM · Forecasting · Snowflake · Cdiscount</span>
+                        <h3>Prévision des recherches à fort trafic</h3>
+                        <p>Pipeline LightGBM de prévision à 28 jours des recherches qui génèrent le plus de vues pendant les temps forts (Black Friday, soldes, French Days), livrant aux équipes Produit le top 1 500 des mots-clés à anticiper.</p>
                         <ul class="project-details">
-                            <li><strong>API :</strong> FastAPI, endpoints de prédiction, statistiques et santé</li>
-                            <li><strong>Industrialisation :</strong> SQLite, Docker, tests et GitHub Actions</li>
-                        </ul>
-                        <div class="project-actions">
-                            <a class="doc-link" href="https://github.com/grayhacked/Duckens_Final_Project" target="_blank" rel="noopener noreferrer">Code GitHub</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <span class="label">LightGBM · Forecasting · Cdiscount</span>
-                        <h3>Prévision de mots-clés e-commerce</h3>
-                        <p>Modèle LightGBM de forecasting entraîné sur des données historiques pour anticiper les recherches générant le plus de trafic lors des pics commerciaux (R² &gt; 0,80).</p>
-                        <ul class="project-details">
-                            <li><strong>Méthode :</strong> lags, moyennes glissantes et validation chronologique</li>
-                            <li><strong>Horizon :</strong> prédiction à 28 jours</li>
+                            <li><strong>Méthode :</strong> retards de 1 à 365 jours, moyennes glissantes, distance aux événements, target encoding, cible en log, validation temporelle et early stopping</li>
+                            <li><strong>Résultat sur le jeu de test :</strong> WAPE 13,4 %, R² 0,77</li>
                         </ul>
                         <p class="document-pending">Projet réalisé en entreprise : code et données confidentiels.</p>
                     </article>
 
                     <article class="project-card">
-                        <span class="label">scikit-learn · FastAPI · Pydantic</span>
-                        <h3>Déploiement d'un modèle ML — Titanic</h3>
-                        <p>Industrialisation d'un modèle de classification via une API REST FastAPI avec validation Pydantic, documentation Swagger et interface web de test.</p>
+                        <span class="label">ARIMA · SARIMAX · XGBoost · FastAPI · Docker</span>
+                        <h3>Prévision météo de bout en bout</h3>
+                        <p>Projet de fin d’études ESTIA : comparaison d’ARIMA, SARIMA et SARIMAX à des modèles de régression (Random Forest, Gradient Boosting, XGBoost), avec recherche d’hyperparamètres en validation croisée, sélection de variables et analyse des résidus.</p>
                         <ul class="project-details">
-                            <li><strong>Modèle :</strong> scikit-learn et Joblib</li>
-                            <li><strong>API :</strong> endpoint de prédiction et health check</li>
+                            <li><strong>Mise en production :</strong> registre de modèles versionnés, API FastAPI de 10 endpoints</li>
+                            <li><strong>Qualité :</strong> tests pytest, CI GitHub Actions publiant l’image Docker</li>
                         </ul>
                         <div class="project-actions">
-                            <a class="doc-link" href="https://github.com/grayhacked/Titanic" target="_blank" rel="noopener noreferrer">Code GitHub</a>
+                            <a class="doc-link" href="https://github.com/2024-2025-estia-bihar/Duckens_Final_Project" target="_blank" rel="noopener noreferrer">Code GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="label">scikit-learn · FastAPI · Streamlit · SQLite</span>
+                        <h3>API de prédiction avec interface (MLOps)</h3>
+                        <p>Pipeline scikit-learn exposé par une API FastAPI, avec une interface Streamlit et la journalisation des prédictions dans SQLite.</p>
+                        <ul class="project-details">
+                            <li><strong>API :</strong> FastAPI, endpoint de prédiction</li>
+                            <li><strong>Suivi :</strong> historique des prédictions en base SQLite</li>
+                        </ul>
+                        <div class="project-actions">
+                            <a class="doc-link" href="https://github.com/grayhacked/MLOPS_TP" target="_blank" rel="noopener noreferrer">Code GitHub</a>
                         </div>
                     </article>
                 </div>
             </section>
 
             <section class="page-card">
-                <h2>IA générative</h2>
+                <h2>Deep learning et IA générative</h2>
                 <div class="project-grid">
                     <article class="project-card">
-                        <span class="label">RAG · TF-IDF · Python</span>
-                        <h3>Support RAG — assistant IA</h3>
-                        <p>Prototype d'assistant de support niveau 1 avec ingestion de documents, découpage, vectorisation TF-IDF, recherche par similarité cosinus et génération contextualisée.</p>
+                        <span class="label">Keras · CNN · VGG16 · ResNet50 · LSTM</span>
+                        <h3>Classification multimodale image et texte</h3>
+                        <p>Classification multi-label à l’ESTIA : CNN conçu de zéro comparé au transfer learning et au fine-tuning de VGG16 et ResNet50 ; textes vectorisés avec GloVe et LSTM ; fusion des deux modalités.</p>
                         <ul class="project-details">
-                            <li><strong>Pipeline :</strong> ingestion, découpage et recherche documentaire</li>
-                            <li><strong>Évolutions prévues :</strong> embeddings, base vectorielle et function calling</li>
+                            <li><strong>Image :</strong> CNN from scratch vs transfer learning et fine-tuning</li>
+                            <li><strong>Texte :</strong> embeddings GloVe et LSTM, fusion multimodale</li>
+                        </ul>
+                        <div class="project-actions">
+                            <a class="doc-link" href="https://github.com/2024-2025-estia-bihar/Duckens_Final_Project" target="_blank" rel="noopener noreferrer">Code GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="label">RAG · TF-IDF · LLM (API OpenAI)</span>
+                        <h3>Assistant de support RAG</h3>
+                        <p>Prototype d’assistant de support : découpage de procédures par section, index TF-IDF, recherche par similarité cosinus et génération de réponses sourcées avec un LLM.</p>
+                        <ul class="project-details">
+                            <li><strong>Pipeline :</strong> découpage, indexation et recherche documentaire</li>
+                            <li><strong>Génération :</strong> réponses sourcées via l’API OpenAI</li>
                         </ul>
                         <div class="project-actions">
                             <a class="doc-link" href="https://github.com/grayhacked/Rag_test_niveau_0" target="_blank" rel="noopener noreferrer">Code GitHub</a>

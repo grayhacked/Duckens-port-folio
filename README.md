@@ -1,6 +1,6 @@
 # Portfolio de Jean Duckens Sannon
 
-Portfolio personnel de **Jean Duckens Sannon**, Data Scientist junior (Machine Learning et MLOps), avec une expérience en Data Analysis, Business Intelligence et systèmes/réseaux.
+Portfolio personnel de **Jean Duckens Sannon**, Data Scientist (Machine Learning, prévision et mise en production), avec une expérience en Data Analysis, Business Intelligence et systèmes/réseaux.
 
 Ce site met en avant mon profil, mon parcours académique, mes compétences techniques, mes expériences professionnelles, mes projets data/IA, ainsi que mes formations et certifications.
 
@@ -41,8 +41,9 @@ Ce site met en avant mon profil, mon parcours académique, mes compétences tech
 │   ├── css/style.css
 │   └── images/
 ├── documents/
-│   ├── cv.pdf
-│   └── CV_Jean_Duckens_Sannon.docx
+│   ├── certifications/
+│   ├── diplomes/
+│   └── CV_Jean_Duckens_Sannon_Data_Scientist_bst.pdf
 ├── projects/
 │   ├── data-analytics/
 │   ├── data-science/
@@ -70,7 +71,7 @@ Le portfolio est un site statique, donc il fonctionne sans installation de dépe
 
 ## Personnalisation
 
-Les contenus sont répartis dans les pages HTML. Le style est dans `assets/css/style.css`, les images dans `assets/images/`, et le CV dans `documents/cv.pdf`.
+Les contenus sont répartis dans les pages HTML. Le style est dans `assets/css/style.css`, les images dans `assets/images/`, et le CV dans `documents/CV_Jean_Duckens_Sannon_Data_Scientist_bst.pdf`.
 
 ## Contact
 
