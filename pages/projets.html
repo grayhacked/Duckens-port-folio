@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projets | Jean Duckens Sannon, Data Scientist</title>
+    <meta name="description" content="Projets data science de Jean Duckens Sannon : prévision LightGBM, prévision météo avec API FastAPI, MLOps, classification multimodale et assistant RAG.">
+    <meta name="theme-color" content="#0b1622">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
     <link rel="icon" href="../assets/images/duc.jpg" type="image/jpeg">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script>try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}</script>
+    <script src="../assets/js/main.js" defer></script>
 </head>
 <body>
     <header>
@@ -31,18 +38,23 @@
                 <h2>Data Science & Machine Learning</h2>
                 <div class="project-grid">
                     <article class="project-card project-card-featured">
-                        <span class="label">LightGBM · Forecasting · Snowflake · Cdiscount</span>
+                        <ul class="tags" aria-label="Technologies"><li>LightGBM</li><li>Forecasting</li><li>Snowflake</li><li>Cdiscount</li></ul>
                         <h3>Prévision des recherches à fort trafic</h3>
                         <p>Pipeline LightGBM de prévision à 28 jours des recherches qui génèrent le plus de vues pendant les temps forts (Black Friday, soldes, French Days), livrant aux équipes Produit le top 1 500 des mots-clés à anticiper.</p>
                         <ul class="project-details">
                             <li><strong>Méthode :</strong> retards de 1 à 365 jours, moyennes glissantes, distance aux événements, target encoding, cible en log, validation temporelle et early stopping</li>
-                            <li><strong>Résultat sur le jeu de test :</strong> WAPE 13,4 %, R² 0,77</li>
+                        </ul>
+                        <ul class="metrics metrics-compact" aria-label="Résultats sur le jeu de test">
+                            <li><span class="metric-value">13,4 %</span><span class="metric-label">WAPE (test)</span></li>
+                            <li><span class="metric-value">0,77</span><span class="metric-label">R² (test)</span></li>
+                            <li><span class="metric-value">28 j</span><span class="metric-label">horizon de prévision</span></li>
+                            <li><span class="metric-value">1 500</span><span class="metric-label">mots-clés livrés</span></li>
                         </ul>
                         <p class="document-pending">Projet réalisé en entreprise : code et données confidentiels.</p>
                     </article>
 
                     <article class="project-card">
-                        <span class="label">ARIMA · SARIMAX · XGBoost · FastAPI · Docker</span>
+                        <ul class="tags" aria-label="Technologies"><li>ARIMA</li><li>SARIMAX</li><li>XGBoost</li><li>FastAPI</li><li>Docker</li></ul>
                         <h3>Prévision météo de bout en bout</h3>
                         <p>Projet de fin d’études ESTIA : comparaison d’ARIMA, SARIMA et SARIMAX à des modèles de régression (Random Forest, Gradient Boosting, XGBoost), avec recherche d’hyperparamètres en validation croisée, sélection de variables et analyse des résidus.</p>
                         <ul class="project-details">
@@ -55,7 +67,7 @@
                     </article>
 
                     <article class="project-card">
-                        <span class="label">scikit-learn · FastAPI · Streamlit · SQLite</span>
+                        <ul class="tags" aria-label="Technologies"><li>scikit-learn</li><li>FastAPI</li><li>Streamlit</li><li>SQLite</li></ul>
                         <h3>API de prédiction avec interface (MLOps)</h3>
                         <p>Pipeline scikit-learn exposé par une API FastAPI, avec une interface Streamlit et la journalisation des prédictions dans SQLite.</p>
                         <ul class="project-details">
@@ -73,7 +85,7 @@
                 <h2>Deep learning et IA générative</h2>
                 <div class="project-grid">
                     <article class="project-card">
-                        <span class="label">Keras · CNN · VGG16 · ResNet50 · LSTM</span>
+                        <ul class="tags" aria-label="Technologies"><li>Keras</li><li>CNN</li><li>VGG16</li><li>ResNet50</li><li>LSTM</li></ul>
                         <h3>Classification multimodale image et texte</h3>
                         <p>Classification multi-label à l’ESTIA : CNN conçu de zéro comparé au transfer learning et au fine-tuning de VGG16 et ResNet50 ; textes vectorisés avec GloVe et LSTM ; fusion des deux modalités.</p>
                         <ul class="project-details">
@@ -86,7 +98,7 @@
                     </article>
 
                     <article class="project-card">
-                        <span class="label">RAG · TF-IDF · LLM (API OpenAI)</span>
+                        <ul class="tags" aria-label="Technologies"><li>RAG</li><li>TF-IDF</li><li>LLM (API OpenAI)</li></ul>
                         <h3>Assistant de support RAG</h3>
                         <p>Prototype d’assistant de support : découpage de procédures par section, index TF-IDF, recherche par similarité cosinus et génération de réponses sourcées avec un LLM.</p>
                         <ul class="project-details">

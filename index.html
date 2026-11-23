@@ -5,12 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Jean Duckens Sannon | Data Scientist, Machine Learning & prévision</title>
         <meta name="description" content="Portfolio de Jean Duckens Sannon, Data Scientist (Master 2 Big Data & IA, ESTIA ; expérience Cdiscount) : machine learning, prévision, mise en production avec FastAPI, Docker et CI/CD, Power BI." />
+        <meta name="theme-color" content="#0b1622" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Jean Duckens Sannon | Data Scientist, Machine Learning & prévision" />
         <meta property="og:description" content="Découvrez mon parcours, mes compétences, mes expériences et mes projets de Data Science et MLOps." />
         <meta property="og:image" content="assets/images/duc.jpg" />
         <link rel="icon" href="assets/images/duc.jpg" type="image/jpeg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" />
         <link rel="stylesheet" href="assets/css/style.css" />
+        <script>try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}</script>
+        <script src="assets/js/main.js" defer></script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jean Duckens Sannon",
+            "jobTitle": "Data Scientist",
+            "email": "mailto:sannonjeanduckens@gmail.com",
+            "address": { "@type": "PostalAddress", "addressCountry": "FR" },
+            "alumniOf": [
+                { "@type": "CollegeOrUniversity", "name": "ESTIA" },
+                { "@type": "CollegeOrUniversity", "name": "ESIH" }
+            ],
+            "knowsAbout": ["Machine learning", "Prévision de séries temporelles", "LightGBM", "Python", "SQL", "FastAPI", "Docker", "Power BI", "RAG"],
+            "sameAs": [
+                "https://github.com/grayhacked",
+                "https://www.linkedin.com/in/jean-duckens-sannon"
+            ]
+        }
+        </script>
     </head>
 
     <body>
@@ -28,20 +53,45 @@
         <main>
             <section class="hero" aria-labelledby="titre-portfolio">
                 <div class="hero-copy">
+                    <span class="eyebrow">Disponible · Data Scientist / ML Engineer · France</span>
                     <h1 id="titre-portfolio">Jean Duckens Sannon</h1>
-                    <h2>Data Scientist | Machine learning · Prévision · Mise en production</h2>
-                    <p>Diplômé d’un Master 2 Big Data & IA (ESTIA) et d’un diplôme d’ingénieur en informatique. Chez <strong>Cdiscount</strong>, j’ai conçu un modèle LightGBM de prévision à 28 jours des recherches qui génèrent le plus de vues pendant les temps forts commerciaux (WAPE 13,4 %, R² 0,77), ainsi que des dashboards Power BI de pilotage des KPI.</p>
+                    <h2>Machine learning · Prévision · Mise en production</h2>
+                    <p>Diplômé d’un Master 2 Big Data & IA (ESTIA) et d’un diplôme d’ingénieur en informatique. Chez <strong>Cdiscount</strong>, j’ai conçu un modèle LightGBM de prévision à 28 jours des recherches qui génèrent le plus de vues pendant les temps forts commerciaux, ainsi que des dashboards Power BI de pilotage des KPI.</p>
                     <p>Je mène un modèle de bout en bout, de la requête SQL à l’API conteneurisée et testée (FastAPI, Docker, pytest, GitHub Actions).</p>
-                    <p><strong>Basé en France · Autorisé à travailler en France</strong></p>
-                    <a class="hero-link" href="documents/CV_Jean_Duckens_Sannon_Data_Scientist_bst.pdf" target="_blank" rel="noopener noreferrer">Consulter mon CV</a>
+                    <div class="hero-actions">
+                        <a class="hero-link" href="pages/projets.html">Voir mes projets</a>
+                        <a class="hero-link hero-link-ghost" href="documents/CV_Jean_Duckens_Sannon_Data_Scientist_bst.pdf" target="_blank" rel="noopener noreferrer">Consulter mon CV</a>
+                    </div>
                 </div>
                 <div class="hero-visual">
                     <img class="profile-image" src="assets/images/duc.jpg" alt="Jean Duckens Sannon" width="240" height="240" />
                 </div>
             </section>
 
+            <section aria-labelledby="resultats-titre">
+                <h2 id="resultats-titre" class="visually-hidden">Résultats chiffrés</h2>
+                <ul class="metrics">
+                    <li>
+                        <span class="metric-value">13,4 %</span>
+                        <span class="metric-label">WAPE de la prévision à 28 jours (Cdiscount, jeu de test)</span>
+                    </li>
+                    <li>
+                        <span class="metric-value">0,77</span>
+                        <span class="metric-label">R² du modèle LightGBM sur le jeu de test</span>
+                    </li>
+                    <li>
+                        <span class="metric-value">1 500</span>
+                        <span class="metric-label">mots-clés à anticiper livrés aux équipes Produit</span>
+                    </li>
+                    <li>
+                        <span class="metric-value">+5 %</span>
+                        <span class="metric-label">d’engagement grâce aux segmentations clients</span>
+                    </li>
+                </ul>
+            </section>
+
             <section class="skills-panel" aria-labelledby="competences-titre">
-                <h2 id="competences-titre">Compétences clés</h2>
+                <h2 id="competences-titre">Stack principale</h2>
                 <ul>
                     <li>Python (pandas, NumPy, scikit-learn)</li>
                     <li>LightGBM, XGBoost & séries temporelles</li>
@@ -55,11 +105,12 @@
             <section class="page-card" aria-labelledby="apropos-titre">
                 <h2 id="apropos-titre">À propos de moi</h2>
                 <p>Je recherche un poste de Data Scientist ou ML Engineer, dans un environnement où je peux transformer des données brutes en modèles fiables, en API testées et en indicateurs utiles aux équipes métier.</p>
+                <p><strong>Basé en France · Autorisé à travailler en France</strong></p>
             </section>
 
             <section class="page-card" aria-labelledby="realisations-titre">
                 <h2 id="realisations-titre">Réalisations clés</h2>
-                <ul>
+                <ul class="list-stack">
                     <li>Cdiscount : prévision LightGBM à 28 jours des recherches à fort trafic (WAPE 13,4 %, R² 0,77), top 1 500 des mots-clés livré aux équipes Produit</li>
                     <li>Cdiscount : segmentations clients ayant contribué à +5 % d’engagement et dashboards Power BI de suivi hebdomadaire</li>
                     <li>ESIH : contribution à un système RAG et au laboratoire IA, formation aux usages de l’IA en entreprise</li>
@@ -71,8 +122,10 @@
             <section class="page-card recruiter-cta" aria-labelledby="cta-titre">
                 <h2 id="cta-titre">Vous recrutez un profil data ?</h2>
                 <p>Échangeons sur vos besoins, vos données et vos projets.</p>
-                <a class="hero-link" href="pages/contacts.html">Me contacter</a>
-                <a class="hero-link" href="documents/CV_Jean_Duckens_Sannon_Data_Scientist_bst.pdf" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
+                <div class="hero-actions">
+                    <a class="hero-link" href="pages/contacts.html">Me contacter</a>
+                    <a class="hero-link hero-link-ghost" href="documents/CV_Jean_Duckens_Sannon_Data_Scientist_bst.pdf" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
+                </div>
             </section>
         </main>
 
