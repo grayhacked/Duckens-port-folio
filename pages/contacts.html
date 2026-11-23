@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script>try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}</script>
     <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/api.js" defer></script>
+    <script src="../assets/js/contact.js" defer></script>
 </head>
 <body>
     <header>
@@ -70,6 +72,25 @@
                         </ul>
                     </article>
                 </div>
+            </section>
+
+            <section class="page-card" id="contact-form-section" aria-labelledby="form-titre" hidden>
+                <h2 id="form-titre">M'envoyer un message</h2>
+                <form id="contact-form" class="contact-form" novalidate>
+                    <label>Nom
+                        <input name="name" required minlength="2" maxlength="100" autocomplete="name">
+                    </label>
+                    <label>Email
+                        <input name="email" type="email" required autocomplete="email">
+                    </label>
+                    <label>Message
+                        <textarea name="message" required minlength="10" maxlength="3000" rows="6"></textarea>
+                    </label>
+                    <!-- Pot de miel : invisible pour les humains, rempli par les robots -->
+                    <input name="website" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+                    <button type="submit" class="hero-link">Envoyer</button>
+                    <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+                </form>
             </section>
         </div>
     </main>

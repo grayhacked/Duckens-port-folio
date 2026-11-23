@@ -41,3 +41,11 @@ coverage/
 
 # Assets lourds ou générés localement (ajuster selon votre projet)
 *.map
+
+backend/.env
+backend/data/
+backend/.venv/
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/

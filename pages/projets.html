@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <script>try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}</script>
     <script src="../assets/js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+    <script src="../assets/js/api.js" defer></script>
+    <script src="../assets/js/forecast.js" defer></script>
 </head>
 <body>
     <header>
@@ -78,6 +81,15 @@
                             <a class="doc-link" href="https://github.com/grayhacked/MLOPS_TP" target="_blank" rel="noopener noreferrer">Code GitHub</a>
                         </div>
                     </article>
+                </div>
+            </section>
+
+            <section class="page-card" id="forecast-demo" aria-labelledby="demo-titre" hidden>
+                <span class="eyebrow">Démo en direct · API FastAPI</span>
+                <h2 id="demo-titre">Prévision météo : prévu vs observé</h2>
+                <p id="demo-caption" class="project-instructions"></p>
+                <div class="chart-box">
+                    <canvas id="forecast-chart" role="img" aria-label="Courbe des valeurs prévues comparées aux valeurs observées sur le jeu de test"></canvas>
                 </div>
             </section>
 
